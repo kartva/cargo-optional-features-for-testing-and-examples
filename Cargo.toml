@@ -1,0 +1,15 @@
+[package]
+name = "test-features"
+version = "0.1.0"
+authors = ["Kartavya Vashishtha <kartavya0703@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+add_two = []
+
+[dependencies]
+
+[dev-dependencies]
+test-features = { path = ".", features = ["add_two"] }
