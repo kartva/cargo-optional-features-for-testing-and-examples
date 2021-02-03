@@ -1,5 +1,5 @@
 pub mod one {
-    fn add_one (n: usize) -> usize {
+    pub fn add_one (n: usize) -> usize {
         n + 1
     }
 }
