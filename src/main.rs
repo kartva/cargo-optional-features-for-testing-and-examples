@@ -9,7 +9,9 @@ fn main () -> std::io::Result<()> {
     println!("Add 1 to num: {}", add_one(num));
 
     #[cfg(feature = "add_two")]
-    println!("Add 2 to num: {}", add_two(num));
+    {
+        println!("Add 2 to num: {}", add_two(num));
+    }
 
     Ok(())
 }
